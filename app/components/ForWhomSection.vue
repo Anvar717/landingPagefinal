@@ -1,68 +1,128 @@
 <template>
   <section class="section for-whom">
+    <div class="for-whom-bg">
+      <div class="glow-orb glow-orb-coral orb-1"></div>
+      <div class="glow-orb glow-orb-teal orb-2"></div>
+    </div>
+    
     <div class="container">
       <div class="section-header">
-        <h2 class="section-title">Для кого <span class="gradient-text">платформа?</span></h2>
+        <span class="section-eyebrow">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+            <path d="M8 1.5a6.5 6.5 0 100 13 6.5 6.5 0 000-13zM0 8a8 8 0 1116 0A8 8 0 010 8z"/>
+            <path d="M8 4a.75.75 0 01.75.75v2.5h2.5a.75.75 0 010 1.5h-2.5v2.5a.75.75 0 01-1.5 0v-2.5h-2.5a.75.75 0 010-1.5h2.5v-2.5A.75.75 0 018 4z"/>
+          </svg>
+          Для кого
+        </span>
+        <h2 class="section-title">
+          Создано для <span class="gradient-text">профессионалов</span>
+        </h2>
         <p class="section-subtitle">
-          FreelanceHub создан для двух сторон одного процесса — для тех, кто ищет помощь, и для тех, кто её предоставляет.
+          Платформа объединяет тех, кто ищет помощь, и тех, кто готов её предоставить
         </p>
       </div>
       
-      <div class="grid grid-2">
-        <div class="audience-card">
-          <div class="audience-icon">
-            <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
-              <rect width="48" height="48" rx="12" fill="url(#freelancer-bg)"/>
-              <path d="M24 14v20M14 24h20" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
-              <circle cx="24" cy="24" r="8" stroke="white" stroke-width="2"/>
-              <defs>
-                <linearGradient id="freelancer-bg" x1="0" y1="0" x2="48" y2="48">
-                  <stop stop-color="#7c3aed"/>
-                  <stop offset="1" stop-color="#a78bfa"/>
-                </linearGradient>
-              </defs>
-            </svg>
+      <!-- Bento Grid -->
+      <div class="audience-grid">
+        <!-- Freelancers Card -->
+        <div class="audience-card freelancers">
+          <div class="card-glow"></div>
+          <div class="card-content">
+            <div class="card-icon">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                <circle cx="16" cy="12" r="6" stroke="currentColor" stroke-width="2"/>
+                <path d="M6 28c0-5.5 4.5-10 10-10s10 4.5 10 10" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <div class="card-badge">Для исполнителей</div>
+            <h3 class="card-title">Фрилансерам</h3>
+            <p class="card-description">
+              Находите проекты, соответствующие вашим навыкам. Формируйте портфолио и развивайте карьеру.
+            </p>
+            
+            <div class="skills-list">
+              <span class="skill-tag">Разработка</span>
+              <span class="skill-tag">Дизайн</span>
+              <span class="skill-tag">Копирайтинг</span>
+              <span class="skill-tag">SMM</span>
+              <span class="skill-tag">Маркетинг</span>
+            </div>
+            
+            <a href="#" class="card-btn">
+              Стать фрилансером
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 10h12M12 4l6 6-6 6"/>
+              </svg>
+            </a>
           </div>
-          <h3 class="audience-title">Фрилансерам</h3>
-          <p class="audience-description">
-            Находите заказы, соответствующие вашим навыкам. Формируйте портфолио, получайте честные отзывы и развивайте карьеру.
-          </p>
-          <ul class="audience-list">
-            <li>Веб-разработчики</li>
-            <li>Дизайнеры</li>
-            <li>Копирайтеры</li>
-            <li>SMM-специалисты</li>
-            <li>Маркетологи</li>
-          </ul>
-          <a href="#" class="btn btn-primary">Стать фрилансером</a>
+          <div class="card-visual freelancer-visual">
+            <div class="visual-circle"></div>
+            <div class="visual-lines">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
         </div>
         
-        <div class="audience-card">
-          <div class="audience-icon">
-            <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
-              <rect width="48" height="48" rx="12" fill="url(#client-bg)"/>
-              <rect x="14" y="18" width="20" height="16" rx="2" stroke="white" stroke-width="2"/>
-              <path d="M18 14v4M30 14v4M14 26h20" stroke="white" stroke-width="2" stroke-linecap="round"/>
-              <defs>
-                <linearGradient id="client-bg" x1="0" y1="0" x2="48" y2="48">
-                  <stop stop-color="#06b6d4"/>
-                  <stop offset="1" stop-color="#22d3ee"/>
-                </linearGradient>
-              </defs>
-            </svg>
+        <!-- Clients Card -->
+        <div class="audience-card clients">
+          <div class="card-glow teal"></div>
+          <div class="card-content">
+            <div class="card-icon teal">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                <rect x="6" y="10" width="20" height="14" rx="2" stroke="currentColor" stroke-width="2"/>
+                <path d="M10 6v4M22 6v4M6 16h20" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <div class="card-badge teal">Для бизнеса</div>
+            <h3 class="card-title">Заказчикам</h3>
+            <p class="card-description">
+              Размещайте задачи и находите проверенных специалистов. Безопасные сделки и гарантия качества.
+            </p>
+            
+            <div class="skills-list">
+              <span class="skill-tag teal">Стартапы</span>
+              <span class="skill-tag teal">Бизнес</span>
+              <span class="skill-tag teal">Агентства</span>
+              <span class="skill-tag teal">Частные лица</span>
+            </div>
+            
+            <a href="#" class="card-btn teal">
+              Разместить заказ
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 10h12M12 4l6 6-6 6"/>
+              </svg>
+            </a>
           </div>
-          <h3 class="audience-title">Заказчикам</h3>
-          <p class="audience-description">
-            Размещайте задачи и находите проверенных специалистов. Безопасные сделки и гарантия качества.
-          </p>
-          <ul class="audience-list">
-            <li>Малый и средний бизнес</li>
-            <li>Предприниматели</li>
-            <li>Стартапы</li>
-            <li>Частные лица</li>
-            <li>Агентства</li>
-          </ul>
-          <a href="#" class="btn btn-primary">Разместить заказ</a>
+          <div class="card-visual client-visual">
+            <div class="visual-grid">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Stats Row -->
+      <div class="stats-row">
+        <div class="stat-box">
+          <div class="stat-number">15+</div>
+          <div class="stat-text">Категорий услуг</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-number">24/7</div>
+          <div class="stat-text">Поддержка</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-number">3 дня</div>
+          <div class="stat-text">Средний срок</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-number">100%</div>
+          <div class="stat-text">Безопасность</div>
         </div>
       </div>
     </div>
@@ -72,65 +132,295 @@
 <style scoped>
 .for-whom {
   background: var(--bg-secondary);
+  position: relative;
+  overflow: hidden;
+}
+
+.for-whom-bg {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.orb-1 {
+  width: 500px;
+  height: 500px;
+  top: -20%;
+  right: -10%;
+  opacity: 0.5;
+}
+
+.orb-2 {
+  width: 400px;
+  height: 400px;
+  bottom: -20%;
+  left: -10%;
+  opacity: 0.4;
+}
+
+.audience-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  margin-bottom: 60px;
 }
 
 .audience-card {
+  position: relative;
   background: var(--bg-card);
   border: 1px solid var(--border-color);
-  border-radius: var(--radius-xl);
+  border-radius: var(--radius-2xl);
   padding: 48px;
+  overflow: hidden;
   transition: var(--transition-normal);
+  display: flex;
+  flex-direction: column;
 }
 
 .audience-card:hover {
   border-color: var(--border-color-hover);
-  transform: translateY(-8px);
-  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.3);
+  transform: translateY(-4px);
 }
 
-.audience-icon {
+.card-glow {
+  position: absolute;
+  top: -100px;
+  right: -100px;
+  width: 300px;
+  height: 300px;
+  background: radial-gradient(circle, rgba(255, 107, 74, 0.15) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.card-glow.teal {
+  background: radial-gradient(circle, rgba(34, 211, 238, 0.15) 0%, transparent 70%);
+}
+
+.card-content {
+  position: relative;
+  z-index: 2;
+  flex: 1;
+}
+
+.card-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 64px;
+  height: 64px;
+  background: rgba(255, 107, 74, 0.1);
+  border: 1px solid rgba(255, 107, 74, 0.2);
+  border-radius: var(--radius-lg);
+  color: var(--accent-primary);
   margin-bottom: 24px;
 }
 
-.audience-title {
-  font-size: 1.75rem;
-  font-weight: 700;
+.card-icon.teal {
+  background: rgba(34, 211, 238, 0.1);
+  border-color: rgba(34, 211, 238, 0.2);
+  color: var(--accent-secondary);
+}
+
+.card-badge {
+  display: inline-block;
+  padding: 6px 14px;
+  background: rgba(255, 107, 74, 0.1);
+  border-radius: 100px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--accent-primary);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
   margin-bottom: 16px;
 }
 
-.audience-description {
-  color: var(--text-secondary);
-  margin-bottom: 24px;
-  line-height: 1.7;
+.card-badge.teal {
+  background: rgba(34, 211, 238, 0.1);
+  color: var(--accent-secondary);
 }
 
-.audience-list {
-  list-style: none;
+.card-title {
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin-bottom: 16px;
+}
+
+.card-description {
+  color: var(--text-secondary);
+  line-height: 1.7;
+  margin-bottom: 28px;
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
   margin-bottom: 32px;
 }
 
-.audience-list li {
-  position: relative;
-  padding-left: 24px;
-  margin-bottom: 12px;
+.skill-tag {
+  padding: 8px 16px;
+  background: var(--bg-tertiary);
+  border: 1px solid var(--border-color);
+  border-radius: 100px;
+  font-size: 0.8125rem;
+  font-weight: 500;
   color: var(--text-secondary);
+  transition: var(--transition-fast);
 }
 
-.audience-list li::before {
-  content: '';
+.skill-tag:hover {
+  border-color: var(--accent-primary);
+  color: var(--accent-primary);
+}
+
+.skill-tag.teal:hover {
+  border-color: var(--accent-secondary);
+  color: var(--accent-secondary);
+}
+
+.card-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 28px;
+  background: var(--accent-primary);
+  color: white;
+  font-weight: 600;
+  border-radius: var(--radius-md);
+  transition: var(--transition-normal);
+}
+
+.card-btn:hover {
+  background: var(--accent-coral);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px var(--glow-coral);
+}
+
+.card-btn.teal {
+  background: var(--accent-secondary);
+}
+
+.card-btn.teal:hover {
+  background: var(--accent-teal);
+  box-shadow: 0 8px 24px var(--glow-teal);
+}
+
+/* Visual Elements */
+.card-visual {
   position: absolute;
-  left: 0;
-  top: 10px;
-  width: 8px;
-  height: 8px;
-  background: var(--accent-gradient);
-  border-radius: 50%;
+  bottom: 0;
+  right: 0;
+  width: 200px;
+  height: 200px;
+  pointer-events: none;
+  opacity: 0.5;
 }
 
-@media (max-width: 768px) {
+.visual-circle {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  border: 2px dashed var(--accent-primary);
+  border-radius: 50%;
+  right: -30px;
+  bottom: -30px;
+  animation: spin-slow 30s linear infinite;
+}
+
+.visual-lines {
+  position: absolute;
+  right: 40px;
+  bottom: 40px;
+}
+
+.visual-lines span {
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: var(--accent-gradient);
+  border-radius: 2px;
+  margin-bottom: 12px;
+  opacity: 0.5;
+}
+
+.visual-lines span:nth-child(2) { width: 40px; }
+.visual-lines span:nth-child(3) { width: 50px; }
+
+.visual-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+}
+
+.visual-grid span {
+  width: 40px;
+  height: 40px;
+  background: rgba(34, 211, 238, 0.1);
+  border: 1px solid rgba(34, 211, 238, 0.2);
+  border-radius: var(--radius-sm);
+}
+
+/* Stats Row */
+.stats-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.stat-box {
+  text-align: center;
+  padding: 32px 24px;
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-xl);
+  transition: var(--transition-normal);
+}
+
+.stat-box:hover {
+  border-color: var(--border-color-hover);
+  transform: translateY(-2px);
+}
+
+.stat-number {
+  font-size: 2rem;
+  font-weight: 800;
+  background: var(--accent-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 8px;
+}
+
+.stat-text {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+}
+
+@media (max-width: 1024px) {
+  .audience-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .stats-row {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
   .audience-card {
     padding: 32px;
   }
+  
+  .card-visual {
+    display: none;
+  }
+  
+  .stats-row {
+    grid-template-columns: 1fr;
+  }
 }
 </style>
-

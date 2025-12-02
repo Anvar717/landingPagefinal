@@ -19,13 +19,14 @@ export default defineNuxtConfig({
         { property: 'og:description', content: 'Найдите лучших специалистов или получите заказы на выполнение задач' },
         { property: 'og:type', content: 'website' },
         { property: 'og:image', content: '/og-image.png' },
-        { name: 'twitter:card', content: 'summary_large_image' }
+        { name: 'twitter:card', content: 'summary_large_image' },
+        { name: 'theme-color', content: '#0c0c0e' }
       ],
       link: [
         { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
         { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
         { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: '' },
-        { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap' }
+        { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap' }
       ]
     },
     pageTransition: { name: 'page', mode: 'out-in' }
