@@ -73,7 +73,6 @@
       
       <div class="footer-bottom">
         <p>&copy; {{ new Date().getFullYear() }} FreelanceHub. Все права защищены.</p>
-        <p class="footer-location">Сделано с ❤️ в России</p>
       </div>
     </div>
   </footer>
