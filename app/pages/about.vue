@@ -1,246 +1,316 @@
 <template>
   <div class="page-about">
+    <!-- Animated Background -->
+    <div class="animated-bg">
+      <div class="gradient-mesh"></div>
+      <div class="floating-orb orb-1"></div>
+      <div class="floating-orb orb-2"></div>
+      <div class="floating-orb orb-3"></div>
+      <div class="noise-overlay"></div>
+    </div>
+
     <!-- Hero Section -->
-    <section class="hero-mini">
-      <div class="hero-bg">
-        <div class="glow-orb glow-orb-coral orb-1"></div>
-        <div class="glow-orb glow-orb-teal orb-2"></div>
-        <div class="hero-grid"></div>
-      </div>
+    <section class="hero-section">
+      <div class="hero-glow"></div>
       
       <div class="container">
-        <span class="section-eyebrow">
-          <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
-            <path d="M8 0a8 8 0 100 16A8 8 0 008 0zM1.5 8a6.5 6.5 0 1113 0 6.5 6.5 0 01-13 0z"/>
-            <path d="M6.5 7.5A.5.5 0 017 7h2a.5.5 0 01.5.5v3a.5.5 0 01-1 0V8h-2a.5.5 0 01-.5-.5z"/>
-            <path d="M8 5a1 1 0 100-2 1 1 0 000 2z"/>
-          </svg>
-          О нас
-        </span>
-        <h1 class="page-title">
-          Мы создаём<br>
-          <span class="gradient-text">будущее</span> фриланса
+        <div class="hero-badge">
+          <span class="badge-dot"></span>
+          <span>О платформе FreelanceHub</span>
+        </div>
+        
+        <h1 class="hero-title">
+          <span class="title-line">Мы создаём</span>
+          <span class="title-line gradient-line">будущее фриланса</span>
         </h1>
-        <p class="page-subtitle">
+        
+        <p class="hero-description">
           FreelanceHub — это не просто площадка для заказов. Это экосистема, 
           которая объединяет таланты с возможностями по всему миру.
         </p>
+
+        <div class="hero-stats">
+          <div class="stat-pill">
+            <span class="stat-number">50K+</span>
+            <span class="stat-text">Пользователей</span>
+          </div>
+          <div class="stat-pill">
+            <span class="stat-number">15</span>
+            <span class="stat-text">Стран</span>
+          </div>
+          <div class="stat-pill">
+            <span class="stat-number">2020</span>
+            <span class="stat-text">Год основания</span>
+          </div>
+        </div>
       </div>
     </section>
     
     <!-- Mission Section -->
-    <section class="section mission">
+    <section class="section mission-section">
       <div class="container">
-        <div class="mission-grid">
-          <div class="mission-content">
-            <span class="section-eyebrow">
+        <div class="mission-layout">
+          <div class="mission-left">
+            <div class="section-badge green">
               <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
-                <path d="M8 3a5 5 0 100 10A5 5 0 008 3zm6.5 5a6.5 6.5 0 11-13 0 6.5 6.5 0 0113 0z"/>
-                <path d="M8 5a.5.5 0 01.5.5v2.5H11a.5.5 0 010 1H8a.5.5 0 01-.5-.5v-3A.5.5 0 018 5z"/>
+                <circle cx="8" cy="8" r="3"/>
               </svg>
-              Миссия
-            </span>
-            <h2 class="section-title">
-              Создаём пространство для <span class="gradient-text-teal">качественной работы</span>
+              <span>Наша миссия</span>
+            </div>
+            
+            <h2 class="section-heading">
+              Создаём пространство для 
+              <span class="highlight-text">качественной работы</span>
             </h2>
-            <p class="mission-text">
+          </div>
+          
+          <div class="mission-right">
+            <p class="mission-paragraph">
               Мы верим, что каждый талант заслуживает признания, а каждый бизнес — 
               доступа к лучшим специалистам. Наша миссия — устранить барьеры между 
               профессионалами и компаниями.
             </p>
-            <p class="mission-text">
+            <p class="mission-paragraph">
               FreelanceHub делает фриланс простым, безопасным и выгодным для всех 
               участников процесса. Мы инвестируем в технологии, которые помогают 
               людям работать эффективнее.
             </p>
-            
-            <div class="mission-stats">
-              <div class="stat-item">
-                <span class="stat-value">2020</span>
-                <span class="stat-label">Год основания</span>
+          </div>
+        </div>
+
+        <div class="visual-showcase">
+          <div class="showcase-card">
+            <div class="card-inner">
+              <div class="card-rings">
+                <span class="ring ring-1"></span>
+                <span class="ring ring-2"></span>
+                <span class="ring ring-3"></span>
               </div>
-              <div class="stat-item">
-                <span class="stat-value">50K+</span>
-                <span class="stat-label">Пользователей</span>
+              <div class="card-icon">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                  <circle cx="20" cy="20" r="8" stroke="currentColor" stroke-width="2"/>
+                  <circle cx="20" cy="20" r="16" stroke="currentColor" stroke-width="1" opacity="0.5"/>
+                  <line x1="20" y1="4" x2="20" y2="36" stroke="currentColor" stroke-width="1" opacity="0.3"/>
+                  <line x1="4" y1="20" x2="36" y2="20" stroke="currentColor" stroke-width="1" opacity="0.3"/>
+                </svg>
               </div>
-              <div class="stat-item">
-                <span class="stat-value">15</span>
-                <span class="stat-label">Стран</span>
-              </div>
+              <div class="card-label">Глобальная сеть</div>
             </div>
           </div>
           
-          <div class="mission-visual">
-            <div class="visual-card">
-              <div class="visual-icon">
-                <svg width="48" height="48" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2">
-                  <circle cx="24" cy="24" r="18"/>
-                  <path d="M24 12v24M12 24h24"/>
-                  <circle cx="24" cy="24" r="8"/>
+          <div class="showcase-card">
+            <div class="card-inner">
+              <div class="card-bars">
+                <span class="bar" style="--height: 40%"></span>
+                <span class="bar" style="--height: 70%"></span>
+                <span class="bar" style="--height: 55%"></span>
+                <span class="bar" style="--height: 90%"></span>
+                <span class="bar" style="--height: 65%"></span>
+              </div>
+              <div class="card-label">Рост платформы</div>
+            </div>
+          </div>
+          
+          <div class="showcase-card">
+            <div class="card-inner">
+              <div class="card-nodes">
+                <span class="node node-1"></span>
+                <span class="node node-2"></span>
+                <span class="node node-3"></span>
+                <span class="node node-4"></span>
+                <svg class="node-lines" width="100%" height="100%">
+                  <line x1="30%" y1="30%" x2="70%" y2="30%" stroke="currentColor" stroke-width="1"/>
+                  <line x1="30%" y1="70%" x2="70%" y2="70%" stroke="currentColor" stroke-width="1"/>
+                  <line x1="30%" y1="30%" x2="30%" y2="70%" stroke="currentColor" stroke-width="1"/>
+                  <line x1="70%" y1="30%" x2="70%" y2="70%" stroke="currentColor" stroke-width="1"/>
                 </svg>
               </div>
-              <div class="visual-lines">
-                <span></span>
-                <span></span>
-                <span></span>
-              </div>
+              <div class="card-label">Связи</div>
             </div>
           </div>
         </div>
       </div>
     </section>
     
-    <!-- Problem Section -->
-    <section class="section problems">
+    <!-- Problems Section -->
+    <section class="section problems-section">
       <div class="container">
-        <div class="section-header">
-          <span class="section-eyebrow">
+        <div class="section-header centered">
+          <div class="section-badge coral">
             <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
-              <path d="M8.982 1.566a1.13 1.13 0 00-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 01-1.1 0L7.1 5.995A.905.905 0 018 5zm.002 6a1 1 0 110 2 1 1 0 010-2z"/>
+              <path d="M8.982 1.566a1.13 1.13 0 00-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566z"/>
             </svg>
-            Проблемы рынка
-          </span>
-          <h2 class="section-title">
-            Что мы <span class="gradient-text">решаем</span>
+            <span>Проблемы рынка</span>
+          </div>
+          <h2 class="section-heading centered-heading">
+            Что мы <span class="highlight-coral">решаем</span>
           </h2>
-          <p class="section-subtitle">
+          <p class="section-subtext">
             Мы видим проблемы, которые мешают эффективной работе на рынке фриланса
           </p>
         </div>
         
         <div class="problems-grid">
           <div class="problem-card">
-            <div class="card-number">01</div>
-            <div class="card-icon danger">
-              <svg width="28" height="28" viewBox="0 0 28 28" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M14 3L3 23h22L14 3z"/>
-                <path d="M14 10v6M14 19v.01"/>
+            <div class="problem-number">01</div>
+            <div class="problem-icon-wrap coral">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 2L2 19h20L12 2z"/>
+                <line x1="12" y1="9" x2="12" y2="13"/>
+                <circle cx="12" cy="16" r="0.5" fill="currentColor"/>
               </svg>
             </div>
-            <h3>Небезопасные сделки</h3>
-            <p>Заказчики боятся платить вперёд, фрилансеры — работать без предоплаты. Мошенничество подрывает доверие.</p>
+            <h3 class="problem-title">Небезопасные сделки</h3>
+            <p class="problem-text">Заказчики боятся платить вперёд, фрилансеры — работать без предоплаты. Мошенничество подрывает доверие.</p>
+            <div class="problem-glow"></div>
           </div>
           
           <div class="problem-card">
-            <div class="card-number">02</div>
-            <div class="card-icon warning">
-              <svg width="28" height="28" viewBox="0 0 28 28" fill="none" stroke="currentColor" stroke-width="2">
-                <circle cx="11" cy="11" r="7"/>
-                <path d="M25 25l-6-6"/>
+            <div class="problem-number">02</div>
+            <div class="problem-icon-wrap amber">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="10" cy="10" r="6"/>
+                <line x1="21" y1="21" x2="15" y2="15"/>
               </svg>
             </div>
-            <h3>Сложный поиск</h3>
-            <p>Трудно найти проверенного специалиста или надёжного заказчика среди тысяч профилей.</p>
+            <h3 class="problem-title">Сложный поиск</h3>
+            <p class="problem-text">Трудно найти проверенного специалиста или надёжного заказчика среди тысяч профилей.</p>
+            <div class="problem-glow amber"></div>
           </div>
           
           <div class="problem-card">
-            <div class="card-number">03</div>
-            <div class="card-icon info">
-              <svg width="28" height="28" viewBox="0 0 28 28" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M5 8h18v12H12l-4 4v-4H5V8z"/>
-                <path d="M10 13h8M10 16h5"/>
+            <div class="problem-number">03</div>
+            <div class="problem-icon-wrap blue">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 6h16v12H12l-4 4v-4H4V6z"/>
+                <line x1="8" y1="10" x2="16" y2="10"/>
+                <line x1="8" y1="14" x2="12" y2="14"/>
               </svg>
             </div>
-            <h3>Плохая коммуникация</h3>
-            <p>Отсутствие удобных инструментов для общения и управления проектами создаёт хаос.</p>
+            <h3 class="problem-title">Плохая коммуникация</h3>
+            <p class="problem-text">Отсутствие удобных инструментов для общения и управления проектами создаёт хаос.</p>
+            <div class="problem-glow blue"></div>
           </div>
         </div>
       </div>
     </section>
     
     <!-- Values Section -->
-    <section class="section values">
-      <div class="values-bg bg-mesh"></div>
+    <section class="section values-section">
+      <div class="values-bg"></div>
       
       <div class="container">
-        <div class="section-header">
-          <span class="section-eyebrow">
+        <div class="section-header centered">
+          <div class="section-badge purple">
             <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
-              <path d="M8 1.5a6.5 6.5 0 100 13 6.5 6.5 0 000-13zM0 8a8 8 0 1116 0A8 8 0 010 8z"/>
-              <path d="M8 4a.5.5 0 01.5.5v3h3a.5.5 0 010 1h-3v3a.5.5 0 01-1 0v-3h-3a.5.5 0 010-1h3v-3A.5.5 0 018 4z"/>
+              <path d="M8 0l2 5h5l-4 3 2 5-5-4-5 4 2-5-4-3h5l2-5z"/>
             </svg>
-            Ценности
-          </span>
-          <h2 class="section-title">
-            Наши <span class="gradient-text-purple">принципы</span>
+            <span>Ценности</span>
+          </div>
+          <h2 class="section-heading centered-heading">
+            Наши <span class="highlight-purple">принципы</span>
           </h2>
         </div>
         
         <div class="values-grid">
-          <div class="value-card">
-            <div class="value-icon">
-              <svg width="32" height="32" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2">
-                <circle cx="16" cy="16" r="12"/>
-                <path d="M16 10v12M10 16h12"/>
+          <div class="value-card glass">
+            <div class="value-icon-wrap">
+              <div class="icon-glow coral"></div>
+              <svg width="28" height="28" viewBox="0 0 28 28" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="14" cy="14" r="10"/>
+                <line x1="14" y1="8" x2="14" y2="20"/>
+                <line x1="8" y1="14" x2="20" y2="14"/>
               </svg>
             </div>
-            <h3>Прозрачность</h3>
-            <p>Честные правила, понятные комиссии, открытая система рейтингов. Никаких скрытых условий.</p>
-            <div class="value-glow"></div>
+            <h3 class="value-title">Прозрачность</h3>
+            <p class="value-text">Честные правила, понятные комиссии, открытая система рейтингов. Никаких скрытых условий.</p>
+            <div class="value-accent coral"></div>
           </div>
           
-          <div class="value-card">
-            <div class="value-icon teal">
-              <svg width="32" height="32" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M16 3L6 8v8c0 6 4 11 10 12 6-1 10-6 10-12V8L16 3z"/>
-                <path d="M11 16l3 3 7-7"/>
+          <div class="value-card glass">
+            <div class="value-icon-wrap green">
+              <div class="icon-glow green"></div>
+              <svg width="28" height="28" viewBox="0 0 28 28" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M14 3L6 7v6c0 5 3 9 8 10 5-1 8-5 8-10V7l-8-4z"/>
+                <polyline points="10,14 13,17 18,11"/>
               </svg>
             </div>
-            <h3>Безопасность</h3>
-            <p>Защита сделок, верификация пользователей, поддержка в спорах. Ваши деньги в безопасности.</p>
-            <div class="value-glow teal"></div>
+            <h3 class="value-title">Безопасность</h3>
+            <p class="value-text">Защита сделок, верификация пользователей, поддержка в спорах. Ваши деньги в безопасности.</p>
+            <div class="value-accent green"></div>
           </div>
           
-          <div class="value-card">
-            <div class="value-icon purple">
-              <svg width="32" height="32" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M16 3l3 6 7 1-5 5 1 7-6-3-6 3 1-7-5-5 7-1 3-6z"/>
+          <div class="value-card glass">
+            <div class="value-icon-wrap purple">
+              <div class="icon-glow purple"></div>
+              <svg width="28" height="28" viewBox="0 0 28 28" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M14 3l2.5 5 5.5 1-4 4 1 5.5-5-2.5-5 2.5 1-5.5-4-4 5.5-1 2.5-5z"/>
               </svg>
             </div>
-            <h3>Качество</h3>
-            <p>Только проверенные специалисты и реальные отзывы клиентов. Мы следим за стандартами.</p>
-            <div class="value-glow purple"></div>
+            <h3 class="value-title">Качество</h3>
+            <p class="value-text">Только проверенные специалисты и реальные отзывы клиентов. Мы следим за стандартами.</p>
+            <div class="value-accent purple"></div>
           </div>
         </div>
       </div>
     </section>
     
     <!-- Team Section -->
-    <section class="section team">
+    <section class="section team-section">
       <div class="container">
-        <div class="team-content">
-          <div class="team-info">
-            <span class="section-eyebrow">
+        <div class="team-layout">
+          <div class="team-content">
+            <div class="section-badge green">
               <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
-                <path d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1h8zm-7.978-1A.261.261 0 017 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002a.274.274 0 01-.014.002H7.022zM11 7a2 2 0 100-4 2 2 0 000 4zm3-2a3 3 0 11-6 0 3 3 0 016 0zM6.936 9.28a5.88 5.88 0 00-1.23-.247A7.35 7.35 0 005 9c-4 0-5 3-5 4 0 .667.333 1 1 1h4.216A2.238 2.238 0 015 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816zM4.92 10A5.493 5.493 0 004 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275zM1.5 5.5a3 3 0 116 0 3 3 0 01-6 0zm3-2a2 2 0 100 4 2 2 0 000-4z"/>
+                <circle cx="6" cy="6" r="2"/>
+                <circle cx="10" cy="6" r="2"/>
+                <circle cx="8" cy="10" r="2"/>
               </svg>
-              Команда
-            </span>
-            <h2 class="section-title">
-              Люди, которые<br><span class="gradient-text">создают</span> продукт
+              <span>Команда</span>
+            </div>
+            
+            <h2 class="section-heading">
+              Люди, которые<br>
+              <span class="highlight-text">создают</span> продукт
             </h2>
-            <p class="team-text">
+            
+            <p class="team-description">
               Мы — команда из 30+ профессионалов: разработчики, дизайнеры, маркетологи и специалисты поддержки. Объединены общей целью — сделать фриланс лучше.
             </p>
             
-            <a href="/contacts" class="btn btn-primary">
-              Связаться с нами
-              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M4 10h12M12 4l6 6-6 6"/>
+            <a href="/contacts" class="cta-button">
+              <span>Связаться с нами</span>
+              <svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 9h10M10 5l4 4-4 4"/>
               </svg>
             </a>
           </div>
           
-          <div class="team-avatars">
-            <div class="avatar-grid">
-              <div class="avatar" style="background: linear-gradient(135deg, #ff6b4a, #ff8a6b)">А</div>
-              <div class="avatar" style="background: linear-gradient(135deg, #22d3ee, #2dd4bf)">М</div>
-              <div class="avatar" style="background: linear-gradient(135deg, #a78bfa, #c4b5fd)">Д</div>
-              <div class="avatar" style="background: linear-gradient(135deg, #10b981, #34d399)">Е</div>
-              <div class="avatar" style="background: linear-gradient(135deg, #fbbf24, #f59e0b)">И</div>
-              <div class="avatar" style="background: linear-gradient(135deg, #ec4899, #f472b6)">О</div>
-              <div class="avatar more">+24</div>
+          <div class="team-visual">
+            <div class="avatar-constellation">
+              <div class="avatar-item" style="--delay: 0s; --x: 0; --y: 0">
+                <span class="avatar coral">А</span>
+              </div>
+              <div class="avatar-item" style="--delay: 0.1s; --x: 80px; --y: -20px">
+                <span class="avatar green">М</span>
+              </div>
+              <div class="avatar-item" style="--delay: 0.2s; --x: 40px; --y: 70px">
+                <span class="avatar purple">Д</span>
+              </div>
+              <div class="avatar-item" style="--delay: 0.3s; --x: -40px; --y: 70px">
+                <span class="avatar teal">Е</span>
+              </div>
+              <div class="avatar-item" style="--delay: 0.4s; --x: -80px; --y: -20px">
+                <span class="avatar amber">И</span>
+              </div>
+              <div class="avatar-item" style="--delay: 0.5s; --x: 120px; --y: 40px">
+                <span class="avatar pink">О</span>
+              </div>
+              <div class="avatar-item" style="--delay: 0.6s; --x: -120px; --y: 40px">
+                <span class="avatar more">+24</span>
+              </div>
             </div>
+            <div class="constellation-glow"></div>
           </div>
         </div>
       </div>
@@ -258,149 +328,463 @@ useSeoMeta({
 </script>
 
 <style scoped>
-/* Hero Mini */
-.hero-mini {
+/* ===== Base Variables ===== */
+.page-about {
+  --coral: #ff6b4a;
+  --coral-light: #ff8a6b;
+  --coral-dark: #e55a3a;
+  --green: #39d98a;
+  --green-light: #57e5a0;
+  --green-dark: #2db872;
+  --purple: #a78bfa;
+  --purple-light: #c4b5fd;
+  --teal: #22d3ee;
+  --amber: #fbbf24;
+  --pink: #ec4899;
+  --blue: #3b82f6;
+  
   position: relative;
-  padding: 200px 0 120px;
-  text-align: center;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
-.hero-bg {
-  position: absolute;
+/* ===== Animated Background ===== */
+.animated-bg {
+  position: fixed;
   inset: 0;
   pointer-events: none;
+  z-index: -1;
+}
+
+.gradient-mesh {
+  position: absolute;
+  inset: 0;
+  background: 
+    radial-gradient(ellipse 80% 50% at 20% 40%, rgba(255, 107, 74, 0.12) 0%, transparent 50%),
+    radial-gradient(ellipse 60% 60% at 80% 20%, rgba(57, 217, 138, 0.1) 0%, transparent 50%),
+    radial-gradient(ellipse 50% 80% at 60% 80%, rgba(167, 139, 250, 0.08) 0%, transparent 50%);
+  animation: meshMove 20s ease-in-out infinite;
+}
+
+@keyframes meshMove {
+  0%, 100% { transform: scale(1) rotate(0deg); }
+  50% { transform: scale(1.05) rotate(1deg); }
+}
+
+.floating-orb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(80px);
+  animation: orbFloat 15s ease-in-out infinite;
 }
 
 .orb-1 {
-  width: 500px;
-  height: 500px;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(255, 107, 74, 0.25) 0%, transparent 70%);
   top: -20%;
-  right: -10%;
-  opacity: 0.4;
+  right: -15%;
+  animation-delay: 0s;
 }
 
 .orb-2 {
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(57, 217, 138, 0.2) 0%, transparent 70%);
+  bottom: 20%;
+  left: -20%;
+  animation-delay: -5s;
+}
+
+.orb-3 {
   width: 400px;
   height: 400px;
-  top: 30%;
-  left: -10%;
-  opacity: 0.3;
+  background: radial-gradient(circle, rgba(167, 139, 250, 0.15) 0%, transparent 70%);
+  top: 40%;
+  right: 10%;
+  animation-delay: -10s;
 }
 
-.hero-grid {
+@keyframes orbFloat {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  33% { transform: translate(30px, -30px) scale(1.1); }
+  66% { transform: translate(-20px, 20px) scale(0.95); }
+}
+
+.noise-overlay {
   position: absolute;
   inset: 0;
-  background-image: 
-    linear-gradient(rgba(255, 255, 255, 0.015) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255, 255, 255, 0.015) 1px, transparent 1px);
-  background-size: 80px 80px;
-  mask-image: radial-gradient(ellipse 70% 60% at 50% 30%, black 20%, transparent 70%);
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+  opacity: 0.03;
 }
 
-.page-title {
-  font-size: clamp(3rem, 7vw, 5rem);
+/* ===== Hero Section ===== */
+.hero-section {
+  position: relative;
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  padding: 160px 0 100px;
+  text-align: center;
+}
+
+.hero-glow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 800px;
+  height: 400px;
+  background: radial-gradient(ellipse, rgba(255, 107, 74, 0.15) 0%, transparent 60%);
+  pointer-events: none;
+}
+
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 20px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 50px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+  margin-bottom: 40px;
+  backdrop-filter: blur(10px);
+}
+
+.badge-dot {
+  width: 8px;
+  height: 8px;
+  background: var(--green);
+  border-radius: 50%;
+  animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.3); opacity: 0.7; }
+}
+
+.hero-title {
+  font-size: clamp(3.5rem, 10vw, 6rem);
   font-weight: 800;
-  margin: 32px 0;
   line-height: 1.05;
   letter-spacing: -0.04em;
+  margin-bottom: 32px;
 }
 
-.page-subtitle {
+.title-line {
+  display: block;
+}
+
+.gradient-line {
+  background: linear-gradient(135deg, var(--coral) 0%, var(--coral-light) 50%, var(--green) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.hero-description {
   font-size: clamp(1.125rem, 2vw, 1.375rem);
   color: var(--text-secondary);
   max-width: 600px;
-  margin: 0 auto;
+  margin: 0 auto 50px;
   line-height: 1.7;
 }
 
-/* Mission Section */
-.mission {
-  background: var(--bg-secondary);
-}
-
-.mission-grid {
-  display: grid;
-  grid-template-columns: 1.2fr 1fr;
-  gap: 80px;
-  align-items: center;
-}
-
-.mission-text {
-  color: var(--text-secondary);
-  line-height: 1.8;
-  margin-bottom: 24px;
-  font-size: 1.125rem;
-}
-
-.mission-stats {
+.hero-stats {
   display: flex;
-  gap: 40px;
-  margin-top: 48px;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
 }
 
-.stat-item {
-  text-align: left;
+.stat-pill {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  padding: 20px 32px;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
 }
 
-.stat-value {
-  display: block;
-  font-size: 2rem;
+.stat-pill:hover {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: rgba(255, 107, 74, 0.3);
+  transform: translateY(-4px);
+}
+
+.stat-number {
+  font-size: 1.75rem;
   font-weight: 800;
-  background: var(--accent-gradient);
+  background: linear-gradient(135deg, var(--coral), var(--coral-light));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  margin-bottom: 4px;
 }
 
-.stat-label {
+.stat-text {
   font-size: 0.875rem;
   color: var(--text-muted);
 }
 
-.mission-visual {
-  display: flex;
-  justify-content: center;
+/* ===== Section Styles ===== */
+.section {
+  padding: 120px 0;
+  position: relative;
 }
 
-.visual-card {
-  width: 300px;
-  height: 300px;
-  background: var(--bg-card);
-  border: 1px solid var(--border-color);
-  border-radius: var(--radius-2xl);
+.section-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  background: rgba(255, 107, 74, 0.1);
+  border: 1px solid rgba(255, 107, 74, 0.2);
+  border-radius: 50px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--coral);
+  margin-bottom: 24px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.section-badge.green {
+  background: rgba(57, 217, 138, 0.1);
+  border-color: rgba(57, 217, 138, 0.2);
+  color: var(--green);
+}
+
+.section-badge.purple {
+  background: rgba(167, 139, 250, 0.1);
+  border-color: rgba(167, 139, 250, 0.2);
+  color: var(--purple);
+}
+
+.section-badge.coral {
+  background: rgba(255, 107, 74, 0.1);
+  border-color: rgba(255, 107, 74, 0.2);
+  color: var(--coral);
+}
+
+.section-heading {
+  font-size: clamp(2.5rem, 5vw, 3.5rem);
+  font-weight: 800;
+  line-height: 1.15;
+  letter-spacing: -0.03em;
+  margin-bottom: 24px;
+}
+
+.centered-heading {
+  text-align: center;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.highlight-text {
+  background: linear-gradient(135deg, var(--green), var(--teal));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.highlight-coral {
+  background: linear-gradient(135deg, var(--coral), var(--coral-light));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.highlight-purple {
+  background: linear-gradient(135deg, var(--purple), var(--purple-light));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.section-header.centered {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.section-subtext {
+  font-size: 1.125rem;
+  color: var(--text-secondary);
+  max-width: 500px;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
+/* ===== Mission Section ===== */
+.mission-section {
+  background: linear-gradient(180deg, transparent 0%, rgba(57, 217, 138, 0.03) 50%, transparent 100%);
+}
+
+.mission-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: start;
+  margin-bottom: 80px;
+}
+
+.mission-paragraph {
+  font-size: 1.125rem;
+  color: var(--text-secondary);
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+/* Visual Showcase */
+.visual-showcase {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.showcase-card {
+  aspect-ratio: 1;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 24px;
+  overflow: hidden;
+  transition: all 0.4s ease;
+}
+
+.showcase-card:hover {
+  transform: translateY(-8px);
+  border-color: rgba(57, 217, 138, 0.3);
+  background: rgba(57, 217, 138, 0.05);
+}
+
+.card-inner {
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding: 32px;
   position: relative;
-  overflow: hidden;
 }
 
-.visual-icon {
-  color: var(--accent-secondary);
-  margin-bottom: 24px;
-}
-
-.visual-lines {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
+.card-rings {
+  position: relative;
   width: 120px;
+  height: 120px;
+  margin-bottom: 20px;
 }
 
-.visual-lines span {
-  height: 8px;
-  background: var(--accent-gradient);
+.ring {
+  position: absolute;
+  border-radius: 50%;
+  border: 1px solid var(--green);
+  animation: ringPulse 3s ease-in-out infinite;
+}
+
+.ring-1 {
+  inset: 0;
+  opacity: 0.8;
+  animation-delay: 0s;
+}
+
+.ring-2 {
+  inset: 15%;
+  opacity: 0.5;
+  animation-delay: 0.5s;
+}
+
+.ring-3 {
+  inset: 30%;
+  opacity: 0.3;
+  animation-delay: 1s;
+}
+
+@keyframes ringPulse {
+  0%, 100% { transform: scale(1); opacity: 0.3; }
+  50% { transform: scale(1.1); opacity: 0.8; }
+}
+
+.card-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--green);
+}
+
+.card-bars {
+  display: flex;
+  align-items: flex-end;
+  gap: 8px;
+  height: 100px;
+  margin-bottom: 20px;
+}
+
+.bar {
+  width: 20px;
+  height: var(--height);
+  background: linear-gradient(180deg, var(--green), var(--green-dark));
   border-radius: 4px;
-  opacity: 0.4;
+  animation: barGrow 2s ease-in-out infinite;
 }
 
-.visual-lines span:nth-child(1) { width: 100%; }
-.visual-lines span:nth-child(2) { width: 70%; }
-.visual-lines span:nth-child(3) { width: 85%; }
+.bar:nth-child(1) { animation-delay: 0s; }
+.bar:nth-child(2) { animation-delay: 0.2s; }
+.bar:nth-child(3) { animation-delay: 0.4s; }
+.bar:nth-child(4) { animation-delay: 0.6s; }
+.bar:nth-child(5) { animation-delay: 0.8s; }
 
-/* Problems Section */
+@keyframes barGrow {
+  0%, 100% { transform: scaleY(1); }
+  50% { transform: scaleY(0.8); }
+}
+
+.card-nodes {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  margin-bottom: 20px;
+}
+
+.node {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background: var(--green);
+  border-radius: 50%;
+  animation: nodePulse 2s ease-in-out infinite;
+}
+
+.node-1 { top: 20%; left: 20%; animation-delay: 0s; }
+.node-2 { top: 20%; right: 20%; animation-delay: 0.3s; }
+.node-3 { bottom: 20%; left: 20%; animation-delay: 0.6s; }
+.node-4 { bottom: 20%; right: 20%; animation-delay: 0.9s; }
+
+@keyframes nodePulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.3); }
+}
+
+.node-lines {
+  position: absolute;
+  inset: 0;
+  color: rgba(57, 217, 138, 0.3);
+}
+
+.card-label {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+}
+
+/* ===== Problems Section ===== */
+.problems-section {
+  background: linear-gradient(180deg, transparent 0%, rgba(255, 107, 74, 0.03) 50%, transparent 100%);
+}
+
 .problems-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -408,75 +792,104 @@ useSeoMeta({
 }
 
 .problem-card {
-  background: var(--bg-card);
-  border: 1px solid var(--border-color);
-  border-radius: var(--radius-xl);
-  padding: 40px 32px;
   position: relative;
-  transition: var(--transition-normal);
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 24px;
+  padding: 40px 32px;
+  overflow: hidden;
+  transition: all 0.4s ease;
 }
 
 .problem-card:hover {
-  transform: translateY(-4px);
-  border-color: var(--border-color-hover);
+  transform: translateY(-8px);
+  border-color: rgba(255, 255, 255, 0.12);
 }
 
-.card-number {
+.problem-card:hover .problem-glow {
+  opacity: 1;
+}
+
+.problem-number {
   position: absolute;
   top: 24px;
   right: 24px;
   font-size: 0.75rem;
-  font-weight: 700;
+  font-weight: 800;
   color: var(--text-muted);
   letter-spacing: 0.1em;
 }
 
-.card-icon {
-  display: inline-flex;
+.problem-icon-wrap {
+  width: 56px;
+  height: 56px;
+  display: flex;
   align-items: center;
   justify-content: center;
-  width: 64px;
-  height: 64px;
-  border-radius: var(--radius-lg);
+  background: rgba(255, 107, 74, 0.1);
+  border: 1px solid rgba(255, 107, 74, 0.2);
+  border-radius: 16px;
+  color: var(--coral);
   margin-bottom: 24px;
 }
 
-.card-icon.danger {
-  background: rgba(239, 68, 68, 0.1);
-  color: #ef4444;
-}
-
-.card-icon.warning {
+.problem-icon-wrap.amber {
   background: rgba(251, 191, 36, 0.1);
-  color: #fbbf24;
+  border-color: rgba(251, 191, 36, 0.2);
+  color: var(--amber);
 }
 
-.card-icon.info {
+.problem-icon-wrap.blue {
   background: rgba(59, 130, 246, 0.1);
-  color: #3b82f6;
+  border-color: rgba(59, 130, 246, 0.2);
+  color: var(--blue);
 }
 
-.problem-card h3 {
-  font-size: 1.25rem;
+.problem-title {
+  font-size: 1.375rem;
   font-weight: 700;
   margin-bottom: 12px;
+  color: var(--text-primary);
 }
 
-.problem-card p {
+.problem-text {
+  font-size: 1rem;
   color: var(--text-secondary);
   line-height: 1.7;
 }
 
-/* Values Section */
-.values {
-  background: var(--bg-secondary);
-  position: relative;
-  overflow: hidden;
+.problem-glow {
+  position: absolute;
+  bottom: -50%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 200px;
+  height: 200px;
+  background: radial-gradient(circle, rgba(255, 107, 74, 0.2) 0%, transparent 70%);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  pointer-events: none;
+}
+
+.problem-glow.amber {
+  background: radial-gradient(circle, rgba(251, 191, 36, 0.2) 0%, transparent 70%);
+}
+
+.problem-glow.blue {
+  background: radial-gradient(circle, rgba(59, 130, 246, 0.2) 0%, transparent 70%);
+}
+
+/* ===== Values Section ===== */
+.values-section {
+  background: linear-gradient(180deg, rgba(167, 139, 250, 0.03) 0%, transparent 100%);
 }
 
 .values-bg {
   position: absolute;
   inset: 0;
+  background: 
+    radial-gradient(ellipse 50% 50% at 20% 50%, rgba(167, 139, 250, 0.05) 0%, transparent 50%),
+    radial-gradient(ellipse 50% 50% at 80% 50%, rgba(57, 217, 138, 0.05) 0%, transparent 50%);
   pointer-events: none;
 }
 
@@ -486,114 +899,174 @@ useSeoMeta({
   gap: 24px;
 }
 
-.value-card {
-  background: var(--bg-card);
-  border: 1px solid var(--border-color);
-  border-radius: var(--radius-xl);
-  padding: 40px 32px;
+.value-card.glass {
   position: relative;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 24px;
+  padding: 40px 32px;
+  backdrop-filter: blur(10px);
   overflow: hidden;
-  transition: var(--transition-normal);
+  transition: all 0.4s ease;
 }
 
-.value-card:hover {
-  transform: translateY(-4px);
-  border-color: var(--border-color-hover);
+.value-card.glass:hover {
+  transform: translateY(-8px);
+  border-color: rgba(255, 255, 255, 0.15);
 }
 
-.value-icon {
-  display: inline-flex;
+.value-icon-wrap {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  display: flex;
   align-items: center;
   justify-content: center;
-  width: 64px;
-  height: 64px;
-  background: rgba(255, 107, 74, 0.1);
-  border: 1px solid rgba(255, 107, 74, 0.2);
-  border-radius: var(--radius-lg);
-  color: var(--accent-primary);
   margin-bottom: 24px;
+  color: var(--coral);
 }
 
-.value-icon.teal {
-  background: rgba(34, 211, 238, 0.1);
-  border-color: rgba(34, 211, 238, 0.2);
-  color: var(--accent-secondary);
+.value-icon-wrap.green { color: var(--green); }
+.value-icon-wrap.purple { color: var(--purple); }
+
+.icon-glow {
+  position: absolute;
+  inset: -10px;
+  background: radial-gradient(circle, rgba(255, 107, 74, 0.3) 0%, transparent 70%);
+  filter: blur(15px);
 }
 
-.value-icon.purple {
-  background: rgba(167, 139, 250, 0.1);
-  border-color: rgba(167, 139, 250, 0.2);
-  color: var(--accent-tertiary);
+.icon-glow.green {
+  background: radial-gradient(circle, rgba(57, 217, 138, 0.3) 0%, transparent 70%);
 }
 
-.value-card h3 {
+.icon-glow.purple {
+  background: radial-gradient(circle, rgba(167, 139, 250, 0.3) 0%, transparent 70%);
+}
+
+.value-title {
   font-size: 1.5rem;
   font-weight: 700;
   margin-bottom: 12px;
-  background: var(--accent-gradient);
+  background: linear-gradient(135deg, var(--coral), var(--coral-light));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-.value-card:nth-child(2) h3 {
-  background: var(--accent-gradient-2);
+.value-card:nth-child(2) .value-title {
+  background: linear-gradient(135deg, var(--green), var(--green-light));
   -webkit-background-clip: text;
 }
 
-.value-card:nth-child(3) h3 {
-  background: var(--accent-gradient-3);
+.value-card:nth-child(3) .value-title {
+  background: linear-gradient(135deg, var(--purple), var(--purple-light));
   -webkit-background-clip: text;
 }
 
-.value-card p {
+.value-text {
+  font-size: 1rem;
   color: var(--text-secondary);
   line-height: 1.7;
 }
 
-.value-glow {
+.value-accent {
   position: absolute;
-  bottom: -100px;
-  right: -100px;
-  width: 200px;
-  height: 200px;
-  background: radial-gradient(circle, rgba(255, 107, 74, 0.15) 0%, transparent 70%);
-  pointer-events: none;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--coral), var(--coral-light));
+  transform: scaleX(0);
+  transition: transform 0.4s ease;
 }
 
-.value-glow.teal {
-  background: radial-gradient(circle, rgba(34, 211, 238, 0.15) 0%, transparent 70%);
+.value-accent.green {
+  background: linear-gradient(90deg, var(--green), var(--green-light));
 }
 
-.value-glow.purple {
-  background: radial-gradient(circle, rgba(167, 139, 250, 0.15) 0%, transparent 70%);
+.value-accent.purple {
+  background: linear-gradient(90deg, var(--purple), var(--purple-light));
 }
 
-/* Team Section */
-.team-content {
+.value-card:hover .value-accent {
+  transform: scaleX(1);
+}
+
+/* ===== Team Section ===== */
+.team-section {
+  padding: 140px 0;
+}
+
+.team-layout {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 80px;
   align-items: center;
 }
 
-.team-text {
+.team-description {
+  font-size: 1.125rem;
   color: var(--text-secondary);
   line-height: 1.8;
-  margin-bottom: 32px;
-  font-size: 1.125rem;
+  margin-bottom: 40px;
 }
 
-.team-avatars {
-  display: flex;
-  justify-content: center;
+.cta-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px 32px;
+  background: linear-gradient(135deg, var(--coral), var(--coral-dark));
+  border: none;
+  border-radius: 14px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: white;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 20px rgba(255, 107, 74, 0.3);
 }
 
-.avatar-grid {
+.cta-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 30px rgba(255, 107, 74, 0.4);
+}
+
+.cta-button svg {
+  transition: transform 0.3s ease;
+}
+
+.cta-button:hover svg {
+  transform: translateX(4px);
+}
+
+/* Team Visual */
+.team-visual {
+  position: relative;
   display: flex;
-  flex-wrap: wrap;
-  max-width: 280px;
-  gap: 16px;
   justify-content: center;
+  align-items: center;
+  min-height: 350px;
+}
+
+.avatar-constellation {
+  position: relative;
+  width: 250px;
+  height: 250px;
+}
+
+.avatar-item {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(calc(-50% + var(--x)), calc(-50% + var(--y)));
+  animation: avatarFloat 6s ease-in-out infinite;
+  animation-delay: var(--delay);
+}
+
+@keyframes avatarFloat {
+  0%, 100% { transform: translate(calc(-50% + var(--x)), calc(-50% + var(--y))); }
+  50% { transform: translate(calc(-50% + var(--x) + 8px), calc(-50% + var(--y) - 10px)); }
 }
 
 .avatar {
@@ -603,50 +1076,90 @@ useSeoMeta({
   display: flex;
   align-items: center;
   justify-content: center;
-  font-weight: 700;
   font-size: 1.25rem;
+  font-weight: 700;
   color: white;
   border: 3px solid var(--bg-primary);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
 }
+
+.avatar:hover {
+  transform: scale(1.15);
+}
+
+.avatar.coral { background: linear-gradient(135deg, var(--coral), var(--coral-light)); }
+.avatar.green { background: linear-gradient(135deg, var(--green), var(--green-light)); }
+.avatar.purple { background: linear-gradient(135deg, var(--purple), var(--purple-light)); }
+.avatar.teal { background: linear-gradient(135deg, var(--teal), #5eead4); }
+.avatar.amber { background: linear-gradient(135deg, var(--amber), #fcd34d); }
+.avatar.pink { background: linear-gradient(135deg, var(--pink), #f472b6); }
 
 .avatar.more {
-  background: var(--bg-tertiary);
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
   color: var(--text-secondary);
   font-size: 0.875rem;
-  border-color: var(--border-color);
 }
 
+.constellation-glow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  height: 300px;
+  background: radial-gradient(circle, rgba(57, 217, 138, 0.15) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+/* ===== Responsive ===== */
 @media (max-width: 1024px) {
-  .mission-grid,
-  .team-content {
+  .mission-layout,
+  .team-layout {
     grid-template-columns: 1fr;
     gap: 60px;
   }
   
-  .mission-visual,
-  .team-avatars {
-    order: -1;
-  }
-  
+  .visual-showcase,
   .problems-grid,
   .values-grid {
     grid-template-columns: 1fr;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  .team-visual {
+    order: -1;
   }
 }
 
 @media (max-width: 768px) {
-  .hero-mini {
-    padding: 160px 0 80px;
+  .hero-section {
+    padding: 140px 0 80px;
+    min-height: auto;
   }
   
-  .mission-stats {
+  .section {
+    padding: 80px 0;
+  }
+  
+  .hero-stats {
     flex-direction: column;
-    gap: 24px;
+    align-items: center;
   }
   
-  .visual-card {
-    width: 240px;
-    height: 240px;
+  .stat-pill {
+    width: 100%;
+    max-width: 280px;
+  }
+  
+  .section-heading {
+    font-size: 2rem;
+  }
+  
+  .avatar-constellation {
+    transform: scale(0.85);
   }
 }
 </style>
